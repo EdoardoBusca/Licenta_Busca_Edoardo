@@ -1,0 +1,43 @@
+date,category,product_name,brand,units_sold,discount_percent,price_per_unit,total_revenue
+2023-01-01,Electronics,Smartphone X,Samsung,15,0,800,12000
+2023-01-02,Electronics,Smartphone X,Samsung,8,0,800,6400
+2023-01-03,Electronics,Laptop Pro,Apple,5,0,2000,10000
+2023-01-04,Home,Coffee Maker,Philips,20,10,100,1800
+2023-01-05,Home,Air Fryer,Tefal,12,0,150,1800
+2023-01-06,Electronics,TV 4K 55inch,LG,10,15,600,5100
+2023-01-07,Electronics,TV 4K 55inch,LG,25,15,600,12750
+2023-01-08,Electronics,Gaming Console,Sony,30,0,500,15000
+2023-01-09,Home,Vacuum Cleaner,Dyson,4,0,400,1600
+2023-01-10,Electronics,Smartphone Y,Apple,10,0,1000,10000
+2023-01-11,Electronics,Smartphone Y,Apple,12,5,950,11400
+2023-01-12,Home,Blender,Philips,15,20,50,600
+2023-01-13,Electronics,Laptop Air,Apple,8,10,1200,8640
+2023-01-14,Electronics,Gaming Console,Sony,45,10,450,20250
+2023-01-15,Electronics,Headphones,Sony,50,0,100,5000
+2023-01-16,Home,Coffee Maker,Philips,10,0,100,1000
+2023-01-17,Home,Air Fryer,Tefal,8,30,105,840
+2023-01-18,Electronics,Smartphone X,Samsung,12,0,800,9600
+2023-01-19,Electronics,Laptop Pro,Apple,6,0,2000,12000
+2023-01-20,Electronics,TV 4K 55inch,LG,18,20,480,8640
+2023-01-21,Electronics,Gaming Console,Sony,60,0,500,30000
+2023-01-22,Electronics,Headphones,Sony,40,0,100,4000
+2023-01-23,Home,Vacuum Cleaner,Dyson,5,10,360,1800
+2023-01-24,Electronics,Smartphone Y,Apple,9,0,1000,9000
+2023-01-25,Electronics,Smartphone X,Samsung,14,5,760,10640
+2023-01-26,Home,Blender,Philips,20,0,50,1000
+2023-01-27,Electronics,Laptop Air,Apple,10,15,1020,10200
+2023-01-28,Electronics,TV 4K 55inch,LG,30,10,540,16200
+2023-01-29,Electronics,Gaming Console,Sony,55,5,475,26125
+2023-01-30,Home,Coffee Maker,Philips,12,0,100,1200
+2023-02-01,Electronics,Smartphone X,Samsung,18,0,800,14400
+2023-02-02,Electronics,Laptop Pro,Apple,7,0,2000,14000
+2023-02-03,Home,Air Fryer,Tefal,15,10,135,2025
+2023-02-04,Electronics,TV 4K 55inch,LG,22,0,600,13200
+2023-02-05,Electronics,Gaming Console,Sony,40,0,500,20000
+2023-02-06,Electronics,Headphones,Sony,35,10,90,3150
+2023-02-07,Home,Vacuum Cleaner,Dyson,6,0,400,2400
+2023-02-08,Electronics,Smartphone Y,Apple,15,0,1000,15000
+2023-02-09,Electronics,Laptop Air,Apple,9,0,1200,10800
+2023-02-10,Home,Blender,Philips,25,25,37.5,937.5
+2023-02-11,Electronics,Gaming Console,Sony,70,0,500,35000
+2023-02-12,Electronics,TV 4K 55inch,LG,28,5,570,15960
