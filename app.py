@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 # --- 1. CONFIGURATION ---
 st.set_page_config(page_title="Forecasts for Gs", layout="wide", page_icon="💎")
 
-# --- 2. PREMIUM DESIGN SYSTEM (CSS) ---
+# --- 2. PREMIUM DESIGN SYTEM (CSS) ---
 st.markdown("""
     <style>
         /* IMPORT ROBOTO CONDENSED */
@@ -469,4 +469,5 @@ else:
              <div style="border: 1px solid #444; padding: 20px; width: 150px; border-radius: 8px;">3. CRYSTAL BALL</div>
         </div>
     </div>
+
     """, unsafe_allow_html=True)
