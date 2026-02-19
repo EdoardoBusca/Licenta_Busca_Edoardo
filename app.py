@@ -228,7 +228,44 @@ with st.sidebar:
                 st.session_state['target_col'] = target
                 st.session_state['original_date_col'] = date_orig
                 st.success(f"Winner: {m_name}")
-
+def show_top_recommendations(df):
+    st.markdown("---")
+    st.markdown("### 🏆 Top Performance Leaderboard")
+    
+    item_col = st.session_state['cat_cols'][0] # Assuming first categorical is the product
+    target = st.session_state['target_col']
+    
+    # Calculate Metrics for ALL products
+    analysis = df.groupby(item_col).agg({
+        target: ['mean', 'sum', 'std', 'count']
+    }).reset_index()
+    
+    analysis.columns = [item_col, 'avg_sales', 'total_volume', 'volatility', 'frequency']
+    
+    # Calculate a Profit Score (Example: Volume weighted by Stability)
+    # Higher score = High sales + Low Volatility (consistent money)
+    analysis['profit_score'] = (analysis['avg_sales'] / (analysis['volatility'] + 1)) * 100
+    
+    # Sort by the best
+    leaderboard = analysis.sort_values(by='profit_score', ascending=False)
+    
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        fig = px.bar(leaderboard.head(10), x='profit_score', y=item_col, 
+                     orientation='h', title="Top 10 Most Profitable Products",
+                     color='profit_score', template="plotly_dark")
+        st.plotly_chart(fig, use_container_width=True)
+        
+    with col2:
+        st.write("Recommendation")
+        best_item = leaderboard.iloc[0][item_col]
+        st.success(f"**Focus on: {best_item}**")
+        st.write(f"This product has the best ratio of high volume and market stability.")
+        
+        worst_item = leaderboard.iloc[-1][item_col]
+        st.error(f"**Phase out: {worst_item}**")
+        st.write("Low sales volume combined with high production volatility.")
 # --- DASHBOARD ---
 if st.session_state['model']:
 
